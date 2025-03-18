@@ -9,6 +9,8 @@ const getAllTrips = async (req, res) => {
 
 const createTrip = async (req, res) => {
   const { 
+    startTime,
+    finishTime,
     travelFrom,
     travelTo,
     startDate,
@@ -20,6 +22,8 @@ const createTrip = async (req, res) => {
 
   try {
     const trip = await tripSchema.create({ 
+      startTime,
+      finishTime,
       travelFrom,
       travelTo,
       startDate,

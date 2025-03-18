@@ -3,6 +3,14 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const tripSchema = new Schema({
+  startTime: {
+    type: String,
+    required: true
+  },
+  finishTime: {
+    type: String,
+    required: true
+  },
   travelFrom: {
     type: String,
     required: true
